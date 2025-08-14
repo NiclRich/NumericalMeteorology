@@ -1,0 +1,46 @@
+\documentclass[a4paper, 12pt]{report}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage[flushleft]{threeparttable}
+\usepackage[english]{babel}
+\usepackage{todonotes}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\hypersetup{hidelinks,
+breaklinks=true}
+\usepackage{cleveref}
+\usepackage{subcaption}
+
+% packages suggested by P. Pasdzierny:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype} 
+\usepackage{biblatex}
+\addbibresource{references.bib}
+
+\begin{document}
+\begin{titlepage}
+ \begin{center}
+ \vspace*{2cm}
+ {\Large \textbf{Lab Report}\par}%
+\medskip
+ {\Large \textbf{Numerical Methods in Meteorology}\par}%
+\vspace{1.5cm}
+{\Large \textbf{Niclas Richter}\par}%
+\vspace*{6cm}
+{\textbf{ Leipzig Institute of Meteorology}\par}%
+\vspace*{6mm}
+{\textbf{Summer Term 2025}\par}%
+ \end{center}%
+\end{titlepage}
+
+% Inhaltsverzeichnis
+\tableofcontents
+\include{advection}
+
+\include{shallowwater}
+
+\printbibliography
+\end{document}

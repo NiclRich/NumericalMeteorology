@@ -1,0 +1,20 @@
+[swe1d]                          # configuration for one dimensional shallow water equation
+grid_points = 100                # number of spatial
+time_steps = 1200                # number of time steps for time integration
+dx = 1e5                         # size each cell
+dt = 10.0                        # time step size
+gamma = 0.1                      # Parameter gamma of the Robert Asslin Filter
+indices_plotting = [1, 60, 120]  # indices for plotting, needs to be >= 1
+
+[swe2d]                          # configuration for two dimensional shallow water equation
+Nx = 101                         # number of grid points on the x axis
+Ny = 101                         # number of grid points on the y axis
+dx = 5e5                         # spatial discretization
+dy = 5e5
+dt = 10.0                        # time step size
+gamma = 0.1                      # Parameter gamma of the Robert Asslin Filter
+time_steps = 1200                # number of time steps
+coriolis_1 = 0.0                 # scalar approximation of the coriolis force
+coriolis_2 = 1e-4 
+indices_plotting = [1, 60, 120]  # indices for plotting, needs to be >= 1
+

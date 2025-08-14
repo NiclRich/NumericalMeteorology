@@ -1,0 +1,14 @@
+[rectangle] # name of the problem
+# parameter c of the advection equation
+advection_speed = 0.5
+# initial is written as a Julia anonymous function of x
+# used as initial function
+initial       = "x -> (5 < x < 15) ? 1 : 0"
+# define maxial grid distance
+dx_max = 1.0
+# define maximal time step
+dt_max = 1.0
+# define final time
+final_time    = 180.0
+# domain
+domain = [1.0, 100.0]
